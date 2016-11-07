@@ -1,0 +1,12 @@
+* Update zhihu homepage
+
+On zhihu homepage, many questions, answers, articles keep repeating themselves,
+it's quite boring. This simple script with Selenium kill items in homepage.
+Also you can feel the usage of Selenium.
+
+Update homepage with Python and Selenium
+
+** Requirements:
+- Python2/3(modification needed)
+- Selenium 3
+- chromedriver(downloaded from Google)

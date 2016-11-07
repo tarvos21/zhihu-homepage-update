@@ -28,7 +28,7 @@ i = 0
 total_item = 0
 total_page = 0
 error = 0
-while(i<100):
+while(i < 100):
     # wait until the elements appear on the page
     try:
         check = WebDriverWait(driver, 30).until(
