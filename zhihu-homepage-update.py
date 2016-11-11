@@ -1,4 +1,5 @@
-#coding:utf-8
+#!/usr/bin/env python
+# coding:utf-8
 
 # python2 runs Ok, it needs some modification for python3
 # python3 supports Selenium better
@@ -37,7 +38,7 @@ while(i < 100):
 
         # kill all the items in current page
         for i in range(num):
-            
+
             dislike = WebDriverWait(driver, 5).until(
                     EC.presence_of_element_located((By.NAME, 'dislike')))
             dislike.click()
@@ -50,7 +51,6 @@ while(i < 100):
             close.click()
 
             time.sleep(0.8)
-
 
             total_item += 1
 
@@ -68,12 +68,12 @@ while(i < 100):
     # sometimes clicking on the "more" button response nothing
     # so try to refresh the whole page
     except:
-        print "Errors happens, refresh..."
+        print("Errors happens, refresh...")
         driver.refresh()
-        print "Refreshed, waiting..."
+        print("Refreshed, waiting...")
         time.sleep(5)
         driver.execute_script("scroll(0, -250);")
-        print "5s end, go back to start"
+        print("5s end, go back to start")
         error += 1
         print("Error times: %d" % error)
 
